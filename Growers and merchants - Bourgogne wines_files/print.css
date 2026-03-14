@@ -1,0 +1,48 @@
+/* -----------------------------------------
+   Print styles
+----------------------------------------- */ 
+
+@media print {
+	/* START PAR DEFAUT */
+	* { color: #000 !important; text-shadow: none !important; background: transparent !important; box-shadow: none !important;  }
+	a, a:visited { text-decoration: underline; }
+	/*a[href]:after { content: " (" attr(href) ")"; }*/
+	/*abbr[title]:after { /* content: " (" attr(title) ")"; }*/
+	/* a[href^="javascript:"]:after, a[href^="#"]:after { content: "";}
+	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	thead { display: table-header-group;}
+	tr,img {page-break-inside: avoid;}
+	img {max-width: 100% !important;}
+	@page  {margin: 2cm .5cm;}
+	p, h2, h3 {orphans: 3;widows: 3;}*/
+	h2, h3 {page-break-after: avoid; }
+	select {background: #fff !important;}
+	.navbar { display: none;}
+	.table td,.table th {background-color: #fff !important;}
+	.btn > .caret,.dropup > .btn > .caret { border-top-color: #000 !important;}
+	.label { border: 1px solid #000; }
+	.table { border-collapse: collapse !important; }
+	.table-bordered th, .table-bordered td { border: 1px solid #ddd !important;}*/
+	/* END PAR DEFAUT */
+
+	.navbar.yamm.navbar-default { display: none;!important;}
+	#outils { display: none;!important;}
+	.carouselContainer {}
+	#contentPrint {margin-top:0px !important;}
+	.masthead img { width:20%; height:20%}
+	.para-recette span.i { margin-left:150px; top:-80px!important; background:#fff}
+	ul.step li p { width:93%}
+	div.h1 { margin-top:0px!important;}
+	h1 { margin-top:0px;}
+	.footer{ display:none;}
+	.fruit a { padding:0px 24px 30px 0px !important}
+	h1 a { text-decoration:none !important;}
+	.para-video {display: none !important;}
+
+	#contentpopup .row.bonkdo:first-child { border:1px solid #9d0034; padding-top:15px;}
+	
+	.listeVigneron .col-md-4 { float:left; width:33%;}
+	.listeVigneronRow .col-md-3.col-sm-4 { float:left; width:100%}
+	.listeVigneronRow .col-md-9.col-sm-8  { float:left; width:100%}
+	.listeVigneronRow .col-md-4.col-sm-6  { float:left; width:33%}
+}
