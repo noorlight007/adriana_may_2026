@@ -162,9 +162,8 @@ def main():
 
     website_col = headers["Website"]
     email_col = headers["Email"]
-    i = 0
+
     for row in range(2, ws.max_row + 1):
-        i+= 1
         website_value = ws.cell(row=row, column=website_col).value
         current_email = ws.cell(row=row, column=email_col).value
 
@@ -193,10 +192,6 @@ def main():
             print(f"Row {row}: Error processing {website_url}: {e}")
             print("--------------------------------------------------")
             continue
-
-        if i == 5:
-            print("Processed 5 rows, stopping to avoid hitting rate limits.")
-            break
 
     wb.save(EXCEL_FILE)
     wb.close()
