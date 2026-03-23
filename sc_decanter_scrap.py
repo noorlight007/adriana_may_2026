@@ -1,8 +1,8 @@
 import json
 from openpyxl import load_workbook
 
-JSON_FILE = "decanter_italy.json"
-XLSX_FILE = "awards_decanter_Italy.xlsx"
+JSON_FILE = "decanter_france.json"
+XLSX_FILE = "awards_decanter_France.xlsx"
 TARGET_HEADER = "Company Name"
 
 

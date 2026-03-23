@@ -12,8 +12,8 @@ from openpyxl import load_workbook
 
 
 MODEL = "gpt-4o-search-preview-2025-03-11"
-EXCEL_FILE = "awards_decanter_Italy.xlsx"
-COUNTRY_NAME = "Italy"
+EXCEL_FILE = "awards_decanter_France.xlsx"
+COUNTRY_NAME = "France"
 
 
 def return_schema() -> Dict[str, Any]:
@@ -39,7 +39,7 @@ def get_all_instructions():
     system_instructions = (
         "You are an information extraction engine.\n"
         "Your task is to find the official website of a company and then extract one email address from that website.\n"
-        "- The company is located in Italy.\n"
+        "- The company is located in France.\n"
         "- First, identify the most likely official website for the company.\n"
         "- Only use a website if you are confident it is the company's real official website.\n"
         "- If you cannot find the official website, return \"null\" for both website and email.\n"
